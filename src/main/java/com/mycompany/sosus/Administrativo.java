@@ -2,9 +2,7 @@
 package com.mycompany.sosus;
 public class Administrativo {
    
- 
-    
-    
+
     public String nomeAdm;
     private int Senha;
 

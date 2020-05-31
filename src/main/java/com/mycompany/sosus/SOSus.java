@@ -1,9 +1,6 @@
 package com.mycompany.sosus;
 import java.util.Scanner;
 
-
-
-
 public class SOSus {
     public static void main(String[] args){
    int cod ;
@@ -15,7 +12,8 @@ public class SOSus {
 int Senha;
 
  //Classe Usuario---------------------------------------------------------------
-    System.out.print("Seu Nome: ");
+  System.out.println("Usuario-------");   
+ System.out.print("Seu Nome: ");
 		nome = teclado.nextLine();
 
     System.out.print("Seu CPF: ");
@@ -28,7 +26,8 @@ int Senha;
 
     Usuario usuario = new Usuario(nome, Cpf ,dataNascimento,Cadastro);
  // Tem cadastro---------------------------------------------------------------- 
-    if (Cadastro == 0){
+  System.out.println("Cadastro-------");   
+ if (Cadastro == 0){
      System.out.print("Seu Endereço: ");
 	String	endereco = teclado.nextLine();
 
@@ -45,7 +44,7 @@ int Senha;
 
   
   // Formulario-----------------------------------------------------------------
-    
+    System.out.println("Formulario-------");
     System.out.print("Numero de filhos: ");
 	int	Nfilhos = teclado.nextInt();
 
@@ -61,11 +60,13 @@ int Senha;
 
     Formulario fm = new Formulario(Nfilhos, TDoenca, Remedio, Pressao,tempC);
     
- // Administrativo---------------SENHA 1015-------------------------------------
-
+ // Administrativo--------------------------------------------------------------
+ System.out.println("Administrativo-------");
 System.out.println("Deseja logar com ADM 1 sim 0 nao" );
 cod = teclado.nextInt();
 Senha = 0;
+
+
  if(cod == 1){
      System.out.println("Seu Nome: ");
 		nome = teclado.nextLine();
@@ -74,16 +75,10 @@ Senha = 0;
                 
                 Administrativo adm = new Administrativo(nome,Senha); 
                 
-                
-                
-                
-                
-                
-     
- 
+
     }else{
  
- 
+System.exit(0);
  
 }  
 }

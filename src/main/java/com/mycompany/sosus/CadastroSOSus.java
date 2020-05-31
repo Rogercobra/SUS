@@ -2,10 +2,6 @@ package com.mycompany.sosus;
 
 import java.util.Random;
 
-/**
- *
- * @author Ghost
- */
 public class CadastroSOSus {
    private String endereco;
    private int telefone;

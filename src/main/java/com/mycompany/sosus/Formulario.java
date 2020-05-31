@@ -14,7 +14,6 @@ public class Formulario {
     private void Consulta(){
     
     
-    
     }
     
     //Mconstrutor

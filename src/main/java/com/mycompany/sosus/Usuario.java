@@ -3,11 +3,6 @@ package com.mycompany.sosus;
 
 import java.util.Date;
 
-
-/**
- *
- * @author Ghost
- */
 class Usuario {
     // Atributos
    private String nome;
